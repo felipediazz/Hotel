@@ -1,69 +1,63 @@
-
 /* Styles */
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  #rad-error {
-    /* margin-left: 70px; */
-    left: 170px;
-    top: 0px;
-    position: absolute;
-    width: 300px;
-  }
-  
-  
-  
-  #formulario {
-    padding: 20px;
-    color: #fff;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    
-    /*border: 3px solid;*/
-    top:  80px;
-    left: 260px;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  #logo {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    left: 400px;
-    max-height:150px
-    
+#rad-error {
+  /* margin-left: 70px; */
+  left: 170px;
+  top: 0px;
+  position: absolute;
+  width: 300px;
+}
+
+#formulario {
+  padding: 20px;
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+
+  /*border: 3px solid;*/
+  top: 80px;
+  left: 260px;
+}
+
+#logo {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  left: 400px;
+  max-height: 150px;
 }
 
 #boton {
   position: relative;
-  top:  -50px;
+  top: -50px;
 }
 
 #confirme {
   position: absolute;
   top: 5px;
   left: 25px;
-  
 }
 
 #condiciones {
   left: 25px;
   position: absolute;
 }
-  
-  .error {
-    color: #ff0000;
-    font-size: 1.1em;
-  }
 
-  #fondo {
-    position: absolute;
-    background-image: url('/static/core/img/fondo.jpg');
-    background-size: 100%;
-    color: rgb(33, 165, 154);
-    letter-spacing: .05rem;
-    min-height: 100%;
-  }
+.error {
+  color: #ff0000;
+  font-size: 1.1em;
+}
 
+#fondo {
+  position: absolute;
+  background-image: url("/static/core/img/fondo.jpg");
+  background-size: 100%;
+  color: rgb(33, 165, 154);
+  letter-spacing: 0.05rem;
+  min-height: 100%;
+}

@@ -1,0 +1,135 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoteles</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'core/css/hoteles.css' %}">
+
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container-fluid" id="fondo">
+        <br>
+        <h1 class="text-center" id=titulo>
+            Hoteles
+        </h1>
+        <div class="form-group">
+            <div class="form-group col-md-2">
+                <select class="form-control form-control-lg" name="cantPersonas" id="cantPersonas">
+                    <option>Cant. Personas</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <select class="form-control form-control-lg" name="cantCamas" id="cantCamas">
+                    <option>Cant. Camas</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <select class="form-control form-control-lg" name="cantBaños" id="cantBaños">
+                    <option>Cant. Baños</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <select class="form-control form-control-lg" name="servicios" id="servicios">
+                    <option>Tipo de servicio</option>
+                    <option>Premium</option>
+                    <option>Completo</option>
+                    <option>Semi-Completo</option>
+                    <option>Sin servicio</option>
+                </select>
+            </div>
+
+        </div>
+
+        <table class="table table-dark">
+            <thead>
+                <tr>
+
+                    <th scope="col">Cant. Personas</th>
+                    <th scope="col">Cant. Camas</th>
+                    <th scope="col">Cant. Baños</th>
+                    <th scope="col">Tipo de Servicio</th>
+                    <th scope="col">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>Premium</td>
+                    <td>$2.000.000</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>Completo</td>
+                    <td>$1.500.000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>Semi-Completo</td>
+                    <td>$1.200.000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>Sin servicio</td>
+                    <td>$1.000.000</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <img src="{% static 'core/img/veranum blanco.png' %}" alt="Logo" id="logo">
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
+</body>
+
+</html>

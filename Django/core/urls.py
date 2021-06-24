@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import delete_cliente, registro, registrados, add_cliente, edit_cliente
+from .views import delete_cliente, hoteles, registro, registrados, add_cliente, edit_cliente
 
 urlpatterns = [
     path('', registro, name= "registro"),
+    path('hoteles/', hoteles, name= "hoteles"),
     path('registrados/', registrados, name= "registrados"),
     path('add_cliente/', add_cliente, name="add_cliente"),
     path('edit_cliente/<pk>/', edit_cliente, name="edit_cliente"),

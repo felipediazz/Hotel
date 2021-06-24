@@ -1,0 +1,21 @@
+#fondo {
+  position: absolute;
+  background-image: url("/static/core/img/fondo.jpg");
+  background-size: 100%;
+  color: rgb(33, 165, 154);
+  letter-spacing: 0.05rem;
+  min-height: 100%;
+}
+
+h1 {
+  color: white;
+}
+
+#logo {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  left: 1350px;
+  max-height:150px;
+  margin-top: 1%;
+}

@@ -7,6 +7,9 @@ from .forms import ClienteForm
 def registro (request):
     return render(request, 'core/Registro.html')
 
+def hoteles (request):
+    return render(request, 'core/hoteles.html')
+
 def registrados (request):
     cliente = Cliente.objects.all()
     datos = {
