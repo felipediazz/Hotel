@@ -19,3 +19,8 @@ h1 {
   max-height:150px;
   margin-top: 1%;
 }
+
+table thead{
+	background: linear-gradient(to right, #4A00E0, #8E2DE2); 
+	color:white;
+}

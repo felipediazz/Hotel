@@ -14,6 +14,12 @@
     <!--BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--  Datatables  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.css"/>  
+    <!-- searchPanes -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/searchpanes/1.0.1/css/searchPanes.dataTables.min.css">
+    <!-- select -->
+    <link href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css">
 
 </head>
 
@@ -24,101 +30,74 @@
         <h1 class="text-center" id=titulo>
             Hoteles
         </h1>
-        
-        <div class="form-group">
-            <div class="form-group col-md-2">
-                <select class="form-control form-control-lg" name="cantPersonas" id="cantPersonas">
-                    <option>Cant. Personas</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-                
+        <br>
+        <div class="row">
+            <div class="col">
+            <table id="example" class="table table-bordered table-dark  display nowrap" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Cant. Personas</th>
+                        <th>Cant. Camas</th>
+                        <th>Cant. Baños</th>
+                        <th>Tipo de Servicio</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 Persona</td>
+                        <td>1 Cama</td>
+                        <td>1 Baño</td>
+                        <td>Premium</td>
+                        <td>$500.000</td>
+                    </tr>
+                    <tr>
+                        <td>2 Personas</td>
+                        <td>2 Camas</td>
+                        <td>2 Baños</td>
+                        <td>Premium</td>
+                        <td>$800.000</td>
+                    </tr>
+                    <tr>
+                        <td>3 Personas</td>
+                        <td>3 Camas</td>
+                        <td>2 Baños</td>
+                        <td>Premium</td>
+                        <td>$1.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>1 Persona</td>
+                        <td>1 Cama</td>
+                        <td>1 Baño</td>
+                        <td>Completo</td>
+                        <td>$450.000</td>
+                    </tr>
+                    <tr>
+                        <td>2 Personas</td>
+                        <td>2 Camas</td>
+                        <td>2 Baños</td>
+                        <td>Completo</td>
+                        <td>$750.000</td>
+                    </tr>
+                    <tr>
+                        <td>3 Personas</td>
+                        <td>3 Camas</td>
+                        <td>2 Baños</td>
+                        <td>Completo</td>
+                        <td>$950.000</td>
+                    </tr>
+                    
+                    
+                </tbody>                
+            </table>           
             </div>
-
-            <div class="form-group col-md-2">
-                <select class="form-control form-control-lg" name="cantCamas" id="cantCamas">
-                    <option>Cant. Camas</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-
-            <div class="form-group col-md-2">
-                <select class="form-control form-control-lg" name="cantBaños" id="cantBaños">
-                    <option>Cant. Baños</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-
-            <div class="form-group col-md-2">
-                <select class="form-control form-control-lg" name="servicios" id="servicios">
-                    <option>Tipo de servicio</option>
-                    <option>Premium</option>
-                    <option>Completo</option>
-                    <option>Semi-Completo</option>
-                    <option>Sin servicio</option>
-                </select>
-            </div>
-
         </div>
-
-        <table class="table table-dark">
-            <thead>
-                <tr>
-
-                    <th scope="col">Cant. Personas</th>
-                    <th scope="col">Cant. Camas</th>
-                    <th scope="col">Cant. Baños</th>
-                    <th scope="col">Tipo de Servicio</th>
-                    <th scope="col">Precio</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>5</td>
-                    <td>Premium</td>
-                    <td>$2.000.000</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>Completo</td>
-                    <td>$1.500.000</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>Semi-Completo</td>
-                    <td>$1.200.000</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>Sin servicio</td>
-                    <td>$1.000.000</td>
-                </tr>
-            </tbody>
-        </table>
-
-
         <img src="{% static 'core/img/veranum blanco.png' %}" alt="Logo" id="logo">
-
     </div>
+
+
+        
+
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -132,6 +111,15 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 
+    <!--   Datatables-->
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>  
+
+    <!-- searchPanes   -->
+    <script src="https://cdn.datatables.net/searchpanes/1.0.1/js/dataTables.searchPanes.min.js"></script>
+    <!-- select -->
+    <script src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js"></script>
+
+    <script src="{% static 'core/js/hoteles.js' %}"></script>
 </body>
 
 </html>
