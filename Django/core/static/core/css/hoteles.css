@@ -25,79 +25,20 @@ table thead{
 	color:white;
 }
 
-.dataTables_scrollBody{
-  background-color: linear-gradient(to right, #4A00E0, #8E2DE2); 
-  color:rgb(0, 0, 0);
-  
+tbody {
+  color: black;
 }
 
-.dtsp-title{
-  color:rgb(255, 255, 255);
-}
-
-
-.disabledButton{
-  float: right;
-  margin: 80px;
-  border: 1px solid red;
-  background-color: red;
-  padding: 10px;
-  margin-bottom: 0px;
-  margin-top: 5px;
-}
-
-.dtsp-panesContainer{
-  background-color: rgb(51, 58, 64);
-  border-style: none;
-}
-
-.dtsp-clearAll{
-  background-color: aqua;
+label{
   color: white;
 }
 
-
-
-.dtsp-topRow {
-  background-color: white;
-  border-radius: 4px;
-/*   width: 90%;
-  font-size: 11px ; */
-}
-
-
-#DataTables_Table_0_wrapper{
-  margin-top: 15px;
-  border-color: rgb(51, 58, 64) ;
-  width: 100%;
-  height: 80%;
-}
-
-#DataTables_Table_1_wrapper{
-  margin-top: 15px;
-  border-color: rgb(51, 58, 64) ;
-}
-
-#DataTables_Table_2_wrapper{
-  margin-top: 15px;
-  border-color: rgb(51, 58, 64) ;
-}
-
-#DataTables_Table_3_wrapper{
-  margin-top: 15px;
-  border-color: rgb(51, 58, 64) ;
-}
-
-
-#example_filter{
-  color: white;
+span{
+  color: black;
+  font-weight: bold;
 }
 
 #example_info{
-  color:  white;
+  color: white;
 }
 
-
-#paginate_button, .page-item, .active{
-  display: none;
-}
